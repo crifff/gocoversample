@@ -42,11 +42,11 @@ build:
     - script:
         name: go test 
         code: |
-          go test -coverprofile=${WERCKER_REPORT_ARTIFACTS_DIR}/coverage.out ./...
+          go test -coverprofile=coverage.out ./...
     - script:
         name: Coverage
         code: |-
-          go tool cover -html=${WERCKER_REPORT_ARTIFACTS_DIR}/coverage.out -o=${WERCKER_REPORT_ARTIFACTS_DIR}/coverage.html
+          go tool cover -html=coverage.out -o=${WERCKER_REPORT_ARTIFACTS_DIR}/coverage.html
 
 
 
