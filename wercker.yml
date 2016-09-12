@@ -44,9 +44,9 @@ build:
         code: |
           go test ./...
     - script:
-    name: Coverage
-    code: |-
-        go tool cover -html=coverage.out -o=$WERCKER_REPORT_ARTIFACTS_DIR/coverage.html
+        name: Coverage
+        code: |-
+          go tool cover -html=coverage.out -o=$WERCKER_REPORT_ARTIFACTS_DIR/coverage.html
 
 
 
